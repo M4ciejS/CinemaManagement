@@ -1,7 +1,7 @@
 <?php
 require_once 'bootstrap.php';
 $movies = array();
-$cinemaRepository = new CinemaRepository($connection);
+$cinemaRepository = new CinemaRepository();
 $showingRepository = new ShowingRepository($connection);
 $cinema = new Cinema();
 

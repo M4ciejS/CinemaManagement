@@ -22,7 +22,7 @@ Made by M4ciej
             /**
              * @property MovieRepository $cinemaRepository Description
              */
-            $cinemaRepository = new CinemaRepository($connection);
+            $cinemaRepository = new CinemaRepository();
             $cinemas = $cinemaRepository->findAll();
             ?>
             <h1>Lista Kin:</h1>

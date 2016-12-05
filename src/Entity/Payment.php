@@ -1,5 +1,5 @@
 <?php
-
+namespace M4ciej\CinemaManagement\Entity;
 class Payment {
 
     private $id;

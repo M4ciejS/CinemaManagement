@@ -1,5 +1,5 @@
 <?php
-
+namespace M4ciej\CinemaManagement\Repository;
 /*
  * Made by M4ciej
  */

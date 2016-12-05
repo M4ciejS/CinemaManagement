@@ -1,5 +1,9 @@
 <?php
+namespace M4ciej\CinemaManagement\Base;
 
+use Exception;
+use mysqli;
+use mysqli_result;
 /**
  * Copyright
  */
@@ -87,7 +91,7 @@ class Connection {
      * @param array $listOfValue
      * @param array $primaryKeyId
      */
-    public function updateSql($tableName, array $listOfValues, array $primaryKeyId) {
+    public function updateSql($tableName, array $listOfValues, $primaryKeyId) {
         $list = [];
         foreach ($listOfValues as $columnName => $value) {
             $tempValue = $this->escapeString($value);

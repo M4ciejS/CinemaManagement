@@ -1,0 +1,21 @@
+{
+    "name": "m4ciej/cinema-management",
+    "authors": [
+        {
+            "name": "M4ciejS",
+            "email": "maciej.siadak@mandragon.pl"
+        }
+    ],
+    "minimum-stability": "alpha",
+
+    "autoload": {
+        "psr-4": {
+            "M4ciej\\CinemaManagement\\": "src"
+        },
+         "files": ["bootstrap.php"]
+    },
+    "require": {
+        "PHPUnit/PHPUnit":"*",
+        "PHPUnit/dbunit":"*"
+    }
+}

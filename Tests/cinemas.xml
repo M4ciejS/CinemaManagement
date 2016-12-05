@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="cinemasdb">
+	<table_structure name="Administrators">
+		<field Field="id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="login" Type="varchar(50)" Null="NO" Key="UNI" Extra="" Comment="" />
+		<field Field="password" Type="varchar(255)" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="Administrators" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="1" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="Administrators" Non_unique="0" Key_name="login" Seq_in_index="1" Column_name="login" Collation="A" Cardinality="1" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="Administrators" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1" Avg_row_length="16384" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="3" Create_time="2016-11-27 17:20:23" Collation="utf8_general_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="Administrators">
+	<row>
+		<field name="id">2</field>
+		<field name="login">root</field>
+		<field name="password">$2y$10$0MW7Xn28idqTNPM65/biaODo/jox/./DswOTRONMRwy533N.3anIi</field>
+	</row>
+	</table_data>
+	<table_structure name="Cinemas">
+		<field Field="id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="name" Type="varchar(255)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="address" Type="text" Null="YES" Key="" Extra="" Comment="" />
+		<key Table="Cinemas" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="17" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="Cinemas" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="17" Avg_row_length="963" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="18" Create_time="2016-12-04 17:37:58" Update_time="2016-12-04 17:50:38" Collation="utf8_polish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="Cinemas">
+	<row>
+		<field name="id">1</field>
+		<field name="name">Luna</field>
+		<field name="address">ul. Marszałkowska 28</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="name">Silver Screen Puławska</field>
+		<field name="address">Centrum Europlex - ul. Puławska 17</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="name">Iluzjon Filmoteki Narodowej</field>
+		<field name="address">ul. Narbutta 50a</field>
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="name">Etnokino</field>
+		<field name="address">Ul. Kredytowa 1, Warszawa</field>
+	</row>
+	<row>
+		<field name="id">5</field>
+		<field name="name">Multikino Złote Tarasy</field>
+		<field name="address">ul. Złota 59</field>
+	</row>
+	<row>
+		<field name="id">6</field>
+		<field name="name">Kinoteka</field>
+		<field name="address">pl. Defilad 1</field>
+	</row>
+	<row>
+		<field name="id">7</field>
+		<field name="name">Cinema City Promenada</field>
+		<field name="address">ul. Ostrobramska 75C</field>
+	</row>
+	<row>
+		<field name="id">8</field>
+		<field name="name">Praha</field>
+		<field name="address">ul. Jagielloñska 26</field>
+	</row>
+	<row>
+		<field name="id">9</field>
+		<field name="name">Alchemia</field>
+		<field name="address">ul. Jezuicka 4</field>
+	</row>
+	<row>
+		<field name="id">10</field>
+		<field name="name">Muranów</field>
+		<field name="address">ul. Zamenhofa 1</field>
+	</row>
+	<row>
+		<field name="id">11</field>
+		<field name="name">Femina</field>
+		<field name="address">al. Solidarności 115</field>
+	</row>
+	<row>
+		<field name="id">12</field>
+		<field name="name">Wiejskie</field>
+		<field name="address">Wiejska 12/13</field>
+	</row>
+	<row>
+		<field name="id">13</field>
+		<field name="name">Wiejskie</field>
+		<field name="address">Wiejska 12/13</field>
+	</row>
+	<row>
+		<field name="id">14</field>
+		<field name="name">Wiejskie</field>
+		<field name="address">Wiejska 12/13</field>
+	</row>
+	<row>
+		<field name="id">15</field>
+		<field name="name">Wiejskie</field>
+		<field name="address">Wiejska 12/13</field>
+	</row>
+	<row>
+		<field name="id">16</field>
+		<field name="name">Wiejskie</field>
+		<field name="address">Wiejska 12/13</field>
+	</row>
+	<row>
+		<field name="id">17</field>
+		<field name="name">Wiejskie</field>
+		<field name="address">Wiejska 12/13</field>
+	</row>
+	</table_data>
+	<table_structure name="Movies">
+		<field Field="id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="name" Type="varchar(255)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="description" Type="text" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="rating" Type="float" Null="YES" Key="" Extra="" Comment="" />
+		<key Table="Movies" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="12" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="Movies" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="12" Avg_row_length="1365" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="13" Create_time="2016-11-27 16:57:59" Collation="utf8_polish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="Movies">
+	<row>
+		<field name="id">1</field>
+		<field name="name">Zbuntowana (2015)</field>
+		<field name="description">Beatrice Prior konfrontuje się z wewnętrznymi demonami i kontynuuje walkę przeciwko ogromnemu sojuszowi, który może spowodować rozpad społeczeństwa.</field>
+		<field name="rating">7</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="name">Seks, miłość i terapia (2014)</field>
+		<field name="description">Lambert, seksoholik starający się zerwać z nałogiem, zatrudnia wiecznie niezaspokojoną nimfomankę.</field>
+		<field name="rating">5</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="name">Ex Machina (2015)</field>
+		<field name="description">Po wygraniu konkursu programista jednej z największych firm internetowych zostaje zaproszony do posiadłości swojego szefa. Na miejsce okazuje się, że jest częścią eksperymentu. </field>
+		<field name="rating">8</field>
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="name">Sils Maria (2014)</field>
+		<field name="description">Wybitna aktorka podczas kilku dni spędzonych w Alpach ze swoją asystentką na nowo odkrywa siebie. </field>
+		<field name="rating">7</field>
+	</row>
+	<row>
+		<field name="id">5</field>
+		<field name="name">Chappie (2015)</field>
+		<field name="description">Dwóch gangsterów kradnie policyjnego androida, by wykorzystać go do swoich celów. </field>
+		<field name="rating">8</field>
+	</row>
+	<row>
+		<field name="id">6</field>
+		<field name="name">Kopciuszek (2015)</field>
+		<field name="description">Po śmierci ojca zła macocha Elli zamienia dziewczynę w służącą. Los Kopciuszka odmieni dopiero Dobra Wróżka.</field>
+		<field name="rating">8</field>
+	</row>
+	<row>
+		<field name="id">7</field>
+		<field name="name">Sąsiady (2014)</field>
+		<field name="description">Ksiądz odwiedza po kolędzie kamienicę, odkrywając tajemnice jej lokatorów. </field>
+		<field name="rating">3</field>
+	</row>
+	<row>
+		<field name="id">8</field>
+		<field name="name">Złota klatka (2013)</field>
+		<field name="description">Sara, nastolatka z Gwatemali, wyrusza w niebezpieczną podróż do Los Angeles w poszukiwaniu lepszego życia.</field>
+		<field name="rating">9</field>
+	</row>
+	<row>
+		<field name="id">9</field>
+		<field name="name">Body/Ciało (2015)</field>
+		<field name="description">Cyniczny prokurator i jego cierpiąca na anoreksję córka próbują odnaleźć się po tragicznej śmierci najbliższej osoby.</field>
+		<field name="rating">6</field>
+	</row>
+	<row>
+		<field name="id">10</field>
+		<field name="name">Fru! (2014)</field>
+		<field name="description">Ptaszek, który nigdy wcześniej nie wychylił dzioba poza rodzinne gniazdo, zostaje przez pomyłkę przewodnikiem stada.</field>
+		<field name="rating">5</field>
+	</row>
+	<row>
+		<field name="id">11</field>
+		<field name="name">Disco Polo (2015)</field>
+		<field name="description">Młodzi muzycy z prowincji w błyskawiczny sposób zdobywają szczyty list przebojów.</field>
+		<field name="rating">2</field>
+	</row>
+	<row>
+		<field name="id">12</field>
+		<field name="name">Asteriks i Obeliks: Osiedle Bogów (2014)</field>
+		<field name="description">Juliusz Cezar decyduje się na budowę dzielnicy mieszkaniowej dla właścicieli rzymskich i nazywa ją Osiedlem Bogów.</field>
+		<field name="rating">9</field>
+	</row>
+	</table_data>
+	<table_structure name="Payments">
+		<field Field="id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="ticket_id" Type="int(11)" Null="NO" Key="MUL" Extra="" Comment="" />
+		<field Field="type" Type="varchar(50)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="date" Type="date" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="Payments" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="Payments" Non_unique="1" Key_name="ticket_id" Seq_in_index="1" Column_name="ticket_id" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="Payments" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="0" Avg_row_length="0" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Auto_increment="1" Create_time="2016-11-27 17:03:58" Collation="utf8_general_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="Payments">
+	</table_data>
+	<table_structure name="Showings">
+		<field Field="id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="movie_id" Type="int(11)" Null="NO" Key="MUL" Extra="" Comment="" />
+		<field Field="cinema_id" Type="int(11)" Null="NO" Key="MUL" Extra="" Comment="" />
+		<key Table="Showings" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="Showings" Non_unique="0" Key_name="SECONDARY" Seq_in_index="1" Column_name="movie_id" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="Showings" Non_unique="0" Key_name="SECONDARY" Seq_in_index="2" Column_name="cinema_id" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="Showings" Non_unique="1" Key_name="cinema_id" Seq_in_index="1" Column_name="cinema_id" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="Showings" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="0" Avg_row_length="0" Data_length="16384" Max_data_length="0" Index_length="32768" Data_free="0" Auto_increment="1" Create_time="2016-11-27 17:01:56" Collation="utf8_general_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="Showings">
+	</table_data>
+	<table_structure name="Tickets">
+		<field Field="id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="showing_id" Type="int(11)" Null="NO" Key="MUL" Extra="" Comment="" />
+		<field Field="quantity" Type="int(11)" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<field Field="price" Type="decimal(5,2)" Null="NO" Key="" Default="0.00" Extra="" Comment="" />
+		<key Table="Tickets" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="Tickets" Non_unique="1" Key_name="SECONDARY" Seq_in_index="1" Column_name="showing_id" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="Tickets" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="0" Avg_row_length="0" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Auto_increment="1" Create_time="2016-12-04 17:55:51" Collation="utf8_polish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="Tickets">
+	</table_data>
+</database>
+</mysqldump>

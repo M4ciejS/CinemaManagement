@@ -4,7 +4,7 @@ $cinemas = array();
 /**
  * @property MovieRepository $cinemaRepository Description
  */
-$cinemaRepository = new CinemaRepository($connection);
+$cinemaRepository = new CinemaRepository();
 $cinemas = $cinemaRepository->findAll();
 ?>
 <!DOCTYPE html>

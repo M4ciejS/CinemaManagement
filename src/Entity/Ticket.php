@@ -1,4 +1,5 @@
 <?php
+namespace M4ciej\CinemaManagement\Entity;
 class Ticket{
     private $id;
     private $showing_id;
